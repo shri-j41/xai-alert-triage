@@ -1,0 +1,201 @@
+alert_id,timestamp,source_tool,alert_category,severity,affected_asset,user,source_ip,alert_description
+ALT-0001,2024-01-28 02:17:37,Sysmon,Ransomware Indicator,Critical,fin-server-01,service_account,198.51.100.23,Mass file-rename with extension .enc detected on fin-server-01. Possible ransomware.
+ALT-0002,2024-02-12 10:55:36,Wazuh-NIDS,Privilege Escalation,High,workstation-mgmt-01,sales_exec1,185.220.101.45,User sales_exec1 attempted to escalate privileges on workstation-mgmt-01 using sudo/runas.
+ALT-0003,2024-03-22 11:06:14,Wazuh-NIDS,Lateral Movement,High,workstation-hr-01,accountant1,192.168.1.44,SMB lateral movement detected: accountant1 connecting from 192.168.1.44 to internal hosts.
+ALT-0004,2024-05-15 13:33:55,Wazuh-SCA,Unauthorised File Access,High,laptop-sales-01,admin,192.168.1.20,User admin accessed restricted directory /finance/payroll on laptop-sales-01.
+ALT-0005,2024-01-20 20:20:03,Wazuh-HIDS,Data Exfiltration Attempt,Critical,dc-server-01,accountant1,192.168.1.31,Large outbound transfer (>500 MB) detected from dc-server-01 by user accountant1 to 192.168.1.31.
+ALT-0006,2024-05-21 16:47:47,Wazuh-SCA,Firewall Rule Violation,Low,backup-server-01,hr_officer,192.168.1.12,Traffic from 192.168.1.12 to backup-server-01 violated firewall policy on port 3389/22.
+ALT-0007,2024-06-10 01:18:21,Sysmon,Lateral Movement,High,printer-office-01,sales_exec1,203.0.113.77,SMB lateral movement detected: sales_exec1 connecting from 203.0.113.77 to internal hosts.
+ALT-0008,2024-05-08 09:42:37,Wazuh-NIDS,Reconnaissance / Port Scan,Medium,workstation-mgmt-01,accountant1,192.168.1.12,Port scan from 192.168.1.12 targeting internal subnet; workstation-mgmt-01 probed on 1024+ ports.
+ALT-0009,2024-02-23 23:27:03,Wazuh-SCA,Suspicious Process Execution,Medium,laptop-remote-01,accountant1,192.168.1.34,Suspicious process spawned by accountant1 on laptop-remote-01: cmd.exe -> powershell -enc ...
+ALT-0010,2024-05-16 06:43:10,Sysmon,Ransomware Indicator,Critical,dc-server-01,hr_officer,203.0.113.77,Mass file-rename with extension .enc detected on dc-server-01. Possible ransomware.
+ALT-0011,2024-02-01 17:30:38,Wazuh-SCA,Ransomware Indicator,Critical,workstation-mgmt-01,guest_user,198.51.100.23,Mass file-rename with extension .enc detected on workstation-mgmt-01. Possible ransomware.
+ALT-0012,2024-05-12 22:32:01,Wazuh-FIM,Firewall Rule Violation,Medium,printer-office-01,guest_user,192.168.1.24,Traffic from 192.168.1.24 to printer-office-01 violated firewall policy on port 3389/22.
+ALT-0013,2024-02-21 23:45:46,Wazuh-HIDS,Authentication Failure,Low,laptop-remote-01,admin,192.168.1.35,Multiple failed login attempts detected for user admin on laptop-remote-01 from 192.168.1.35.
+ALT-0014,2024-01-28 17:49:47,Wazuh-FIM,Brute Force Attack,High,web-server-01,guest_user,192.168.1.39,Brute-force SSH/RDP attack detected against web-server-01 from external IP 192.168.1.39.
+ALT-0015,2024-03-24 04:38:46,Suricata,Malware Detected,High,pos-terminal-02,it_support,192.168.1.47,Wazuh detected malware signature on pos-terminal-02. File flagged by ClamAV/YARA rule.
+ALT-0016,2024-05-26 18:12:00,Wazuh-HIDS,Firewall Rule Violation,Medium,web-server-01,fin_manager,192.168.1.15,Traffic from 192.168.1.15 to web-server-01 violated firewall policy on port 3389/22.
+ALT-0017,2024-04-25 19:28:03,Wazuh-HIDS,Privilege Escalation,High,pos-terminal-01,fin_manager,192.168.1.37,User fin_manager attempted to escalate privileges on pos-terminal-01 using sudo/runas.
+ALT-0018,2024-06-16 03:31:26,Wazuh-HIDS,Firewall Rule Violation,Medium,workstation-mgmt-01,sales_exec2,192.168.1.45,Traffic from 192.168.1.45 to workstation-mgmt-01 violated firewall policy on port 3389/22.
+ALT-0019,2024-01-22 15:52:14,Wazuh-FIM,Ransomware Indicator,Critical,pos-terminal-01,it_support,192.168.1.31,Mass file-rename with extension .enc detected on pos-terminal-01. Possible ransomware.
+ALT-0020,2024-04-07 04:54:01,Wazuh-NIDS,Firewall Rule Violation,Low,workstation-acct-02,admin,192.168.1.26,Traffic from 192.168.1.26 to workstation-acct-02 violated firewall policy on port 3389/22.
+ALT-0021,2024-04-28 06:00:24,Wazuh-NIDS,Lateral Movement,High,laptop-remote-01,guest_user,104.21.0.0,SMB lateral movement detected: guest_user connecting from 104.21.0.0 to internal hosts.
+ALT-0022,2024-06-27 08:29:23,Wazuh-HIDS,Malware Detected,Critical,laptop-sales-01,fin_manager,192.168.1.43,Wazuh detected malware signature on laptop-sales-01. File flagged by ClamAV/YARA rule.
+ALT-0023,2024-06-19 15:08:26,Wazuh-FIM,Reconnaissance / Port Scan,Medium,workstation-acct-02,admin,91.108.4.0,Port scan from 91.108.4.0 targeting internal subnet; workstation-acct-02 probed on 1024+ ports.
+ALT-0024,2024-05-22 02:56:11,Wazuh-SCA,Brute Force Attack,Medium,web-server-01,ceo,192.168.1.15,Brute-force SSH/RDP attack detected against web-server-01 from external IP 192.168.1.15.
+ALT-0025,2024-02-02 01:32:50,Wazuh-FIM,Privilege Escalation,High,dc-server-01,guest_user,192.168.1.45,User guest_user attempted to escalate privileges on dc-server-01 using sudo/runas.
+ALT-0026,2024-05-18 10:34:58,Wazuh-FIM,Lateral Movement,Critical,web-server-01,it_support,192.168.1.22,SMB lateral movement detected: it_support connecting from 192.168.1.22 to internal hosts.
+ALT-0027,2024-02-13 15:09:55,Wazuh-HIDS,Firewall Rule Violation,Medium,workstation-acct-02,it_support,192.168.1.25,Traffic from 192.168.1.25 to workstation-acct-02 violated firewall policy on port 3389/22.
+ALT-0028,2024-01-02 09:30:42,Wazuh-HIDS,Data Exfiltration Attempt,High,workstation-mgmt-01,it_support,198.51.100.23,Large outbound transfer (>500 MB) detected from workstation-mgmt-01 by user it_support to 198.51.100.23.
+ALT-0029,2024-01-14 18:13:09,Suricata,Policy Violation,Low,web-server-01,sysadmin,192.168.1.31,USB mass-storage device inserted by sysadmin on web-server-01 outside approved hours.
+ALT-0030,2024-05-20 11:04:02,Suricata,Brute Force Attack,High,pos-terminal-01,sales_exec2,45.33.32.156,Brute-force SSH/RDP attack detected against pos-terminal-01 from external IP 45.33.32.156.
+ALT-0031,2024-02-06 23:22:28,Wazuh-HIDS,Reconnaissance / Port Scan,Medium,web-server-01,SYSTEM,192.168.1.36,Port scan from 192.168.1.36 targeting internal subnet; web-server-01 probed on 1024+ ports.
+ALT-0032,2024-05-10 18:06:22,Sysmon,Privilege Escalation,Critical,backup-server-01,sales_exec1,192.168.1.13,User sales_exec1 attempted to escalate privileges on backup-server-01 using sudo/runas.
+ALT-0033,2024-02-18 06:49:21,Wazuh-NIDS,Ransomware Indicator,Critical,fin-server-01,sales_exec1,192.168.1.16,Mass file-rename with extension .enc detected on fin-server-01. Possible ransomware.
+ALT-0034,2024-02-18 12:10:56,Wazuh-HIDS,Brute Force Attack,High,dc-server-01,sales_exec1,162.158.0.1,Brute-force SSH/RDP attack detected against dc-server-01 from external IP 162.158.0.1.
+ALT-0035,2024-01-19 02:38:09,Wazuh-NIDS,Unauthorised File Access,Medium,fin-server-01,guest_user,192.168.1.10,User guest_user accessed restricted directory /finance/payroll on fin-server-01.
+ALT-0036,2024-06-24 05:41:18,Wazuh-HIDS,Malware Detected,Critical,workstation-acct-02,sales_exec2,77.88.55.66,Wazuh detected malware signature on workstation-acct-02. File flagged by ClamAV/YARA rule.
+ALT-0037,2024-02-25 09:21:27,Wazuh-SCA,Malware Detected,Critical,fin-server-01,sales_exec1,162.158.0.1,Wazuh detected malware signature on fin-server-01. File flagged by ClamAV/YARA rule.
+ALT-0038,2024-04-22 11:10:32,Sysmon,Policy Violation,Medium,dc-server-01,accountant1,103.45.67.89,USB mass-storage device inserted by accountant1 on dc-server-01 outside approved hours.
+ALT-0039,2024-04-02 13:59:43,Suricata,Lateral Movement,High,pos-terminal-02,hr_officer,172.67.0.0,SMB lateral movement detected: hr_officer connecting from 172.67.0.0 to internal hosts.
+ALT-0040,2024-01-14 07:19:57,Suricata,Lateral Movement,High,fin-server-01,it_support,45.33.32.156,SMB lateral movement detected: it_support connecting from 45.33.32.156 to internal hosts.
+ALT-0041,2024-02-17 19:26:48,Suricata,Privilege Escalation,High,workstation-acct-01,sysadmin,192.168.1.46,User sysadmin attempted to escalate privileges on workstation-acct-01 using sudo/runas.
+ALT-0042,2024-04-19 18:08:54,Suricata,Reconnaissance / Port Scan,Low,workstation-mgmt-01,sysadmin,192.168.1.47,Port scan from 192.168.1.47 targeting internal subnet; workstation-mgmt-01 probed on 1024+ ports.
+ALT-0043,2024-02-21 13:51:12,Wazuh-SCA,Data Exfiltration Attempt,Critical,web-server-01,guest_user,192.168.1.25,Large outbound transfer (>500 MB) detected from web-server-01 by user guest_user to 192.168.1.25.
+ALT-0044,2024-01-02 19:24:47,Wazuh-SCA,Malware Detected,Critical,workstation-acct-02,hr_officer,192.168.1.14,Wazuh detected malware signature on workstation-acct-02. File flagged by ClamAV/YARA rule.
+ALT-0045,2024-01-26 17:17:32,Wazuh-FIM,Reconnaissance / Port Scan,Low,erp-server-01,it_support,203.0.113.77,Port scan from 203.0.113.77 targeting internal subnet; erp-server-01 probed on 1024+ ports.
+ALT-0046,2024-05-16 14:44:01,Wazuh-FIM,Privilege Escalation,High,backup-server-01,accountant2,104.21.0.0,User accountant2 attempted to escalate privileges on backup-server-01 using sudo/runas.
+ALT-0047,2024-06-19 12:22:05,Wazuh-NIDS,Reconnaissance / Port Scan,Low,pos-terminal-01,it_support,185.220.101.45,Port scan from 185.220.101.45 targeting internal subnet; pos-terminal-01 probed on 1024+ ports.
+ALT-0048,2024-02-22 21:14:04,Wazuh-FIM,Suspicious Process Execution,Medium,printer-office-01,sysadmin,192.168.1.19,Suspicious process spawned by sysadmin on printer-office-01: cmd.exe -> powershell -enc ...
+ALT-0049,2024-04-08 03:22:36,Wazuh-SCA,Reconnaissance / Port Scan,Low,pos-terminal-02,hr_officer,203.0.113.77,Port scan from 203.0.113.77 targeting internal subnet; pos-terminal-02 probed on 1024+ ports.
+ALT-0050,2024-01-09 13:27:33,Wazuh-HIDS,Suspicious Process Execution,Medium,erp-server-01,guest_user,192.168.1.27,Suspicious process spawned by guest_user on erp-server-01: cmd.exe -> powershell -enc ...
+ALT-0051,2024-04-17 03:01:01,Sysmon,Data Exfiltration Attempt,High,pos-terminal-01,accountant2,162.158.0.1,Large outbound transfer (>500 MB) detected from pos-terminal-01 by user accountant2 to 162.158.0.1.
+ALT-0052,2024-04-15 22:38:06,Wazuh-HIDS,Firewall Rule Violation,Low,erp-server-01,sysadmin,192.168.1.19,Traffic from 192.168.1.19 to erp-server-01 violated firewall policy on port 3389/22.
+ALT-0053,2024-06-23 13:33:26,Wazuh-HIDS,Data Exfiltration Attempt,High,workstation-acct-01,fin_manager,91.108.4.0,Large outbound transfer (>500 MB) detected from workstation-acct-01 by user fin_manager to 91.108.4.0.
+ALT-0054,2024-05-31 11:36:18,Suricata,Data Exfiltration Attempt,High,pos-terminal-01,accountant1,192.168.1.32,Large outbound transfer (>500 MB) detected from pos-terminal-01 by user accountant1 to 192.168.1.32.
+ALT-0055,2024-06-20 03:41:50,Wazuh-SCA,Firewall Rule Violation,Low,printer-office-01,accountant1,192.168.1.21,Traffic from 192.168.1.21 to printer-office-01 violated firewall policy on port 3389/22.
+ALT-0056,2024-06-04 18:41:12,Sysmon,Authentication Failure,Low,pos-terminal-02,hr_officer,192.168.1.36,Multiple failed login attempts detected for user hr_officer on pos-terminal-02 from 192.168.1.36.
+ALT-0057,2024-03-15 06:46:25,Wazuh-HIDS,Policy Violation,Low,db-server-01,fin_manager,192.168.1.16,USB mass-storage device inserted by fin_manager on db-server-01 outside approved hours.
+ALT-0058,2024-02-13 06:53:56,Wazuh-HIDS,Unauthorised File Access,Medium,web-server-01,sales_exec2,198.51.100.23,User sales_exec2 accessed restricted directory /finance/payroll on web-server-01.
+ALT-0059,2024-05-30 03:57:48,Wazuh-FIM,Ransomware Indicator,Critical,workstation-acct-01,hr_officer,185.220.101.45,Mass file-rename with extension .enc detected on workstation-acct-01. Possible ransomware.
+ALT-0060,2024-01-23 09:31:53,Wazuh-FIM,Data Exfiltration Attempt,Critical,pos-terminal-01,it_support,103.45.67.89,Large outbound transfer (>500 MB) detected from pos-terminal-01 by user it_support to 103.45.67.89.
+ALT-0061,2024-05-21 11:15:57,Wazuh-FIM,Malware Detected,Critical,fin-server-01,sysadmin,192.168.1.32,Wazuh detected malware signature on fin-server-01. File flagged by ClamAV/YARA rule.
+ALT-0062,2024-05-17 15:10:43,Wazuh-SCA,Firewall Rule Violation,Low,workstation-acct-01,ceo,103.45.67.89,Traffic from 103.45.67.89 to workstation-acct-01 violated firewall policy on port 3389/22.
+ALT-0063,2024-05-01 00:06:52,Wazuh-FIM,Authentication Failure,Low,backup-server-01,sales_exec1,91.108.4.0,Multiple failed login attempts detected for user sales_exec1 on backup-server-01 from 91.108.4.0.
+ALT-0064,2024-03-04 08:07:21,Wazuh-SCA,Ransomware Indicator,Critical,pos-terminal-02,accountant2,192.168.1.36,Mass file-rename with extension .enc detected on pos-terminal-02. Possible ransomware.
+ALT-0065,2024-05-11 12:31:49,Sysmon,Policy Violation,Medium,workstation-hr-01,fin_manager,77.88.55.66,USB mass-storage device inserted by fin_manager on workstation-hr-01 outside approved hours.
+ALT-0066,2024-02-25 17:06:53,Wazuh-NIDS,Malware Detected,Critical,workstation-acct-01,it_support,192.168.1.29,Wazuh detected malware signature on workstation-acct-01. File flagged by ClamAV/YARA rule.
+ALT-0067,2024-04-09 06:14:36,Wazuh-SCA,Firewall Rule Violation,Medium,workstation-acct-02,sales_exec2,192.168.1.23,Traffic from 192.168.1.23 to workstation-acct-02 violated firewall policy on port 3389/22.
+ALT-0068,2024-03-06 02:05:25,Wazuh-HIDS,Policy Violation,Low,pos-terminal-01,sysadmin,172.67.0.0,USB mass-storage device inserted by sysadmin on pos-terminal-01 outside approved hours.
+ALT-0069,2024-01-09 23:22:17,Wazuh-NIDS,Brute Force Attack,High,web-server-01,SYSTEM,103.45.67.89,Brute-force SSH/RDP attack detected against web-server-01 from external IP 103.45.67.89.
+ALT-0070,2024-02-07 18:08:01,Sysmon,Unauthorised File Access,Medium,workstation-acct-02,sales_exec1,192.168.1.46,User sales_exec1 accessed restricted directory /finance/payroll on workstation-acct-02.
+ALT-0071,2024-06-22 08:05:46,Wazuh-HIDS,Policy Violation,Medium,workstation-acct-02,sales_exec1,103.45.67.89,USB mass-storage device inserted by sales_exec1 on workstation-acct-02 outside approved hours.
+ALT-0072,2024-03-31 04:57:33,Wazuh-HIDS,Firewall Rule Violation,Low,dc-server-01,SYSTEM,192.168.1.43,Traffic from 192.168.1.43 to dc-server-01 violated firewall policy on port 3389/22.
+ALT-0073,2024-05-09 15:08:15,Suricata,Lateral Movement,High,printer-office-01,sysadmin,192.168.1.39,SMB lateral movement detected: sysadmin connecting from 192.168.1.39 to internal hosts.
+ALT-0074,2024-03-23 20:45:21,Suricata,Lateral Movement,Critical,laptop-sales-01,sales_exec2,192.168.1.42,SMB lateral movement detected: sales_exec2 connecting from 192.168.1.42 to internal hosts.
+ALT-0075,2024-06-12 02:02:41,Sysmon,Unauthorised File Access,Medium,pos-terminal-02,sales_exec2,192.168.1.25,User sales_exec2 accessed restricted directory /finance/payroll on pos-terminal-02.
+ALT-0076,2024-05-18 13:21:36,Wazuh-FIM,Suspicious Process Execution,High,pos-terminal-01,accountant1,185.220.101.45,Suspicious process spawned by accountant1 on pos-terminal-01: cmd.exe -> powershell -enc ...
+ALT-0077,2024-01-27 20:52:11,Wazuh-NIDS,Brute Force Attack,High,backup-server-01,hr_officer,192.168.1.15,Brute-force SSH/RDP attack detected against backup-server-01 from external IP 192.168.1.15.
+ALT-0078,2024-03-21 13:25:28,Wazuh-SCA,Brute Force Attack,High,pos-terminal-02,fin_manager,192.168.1.14,Brute-force SSH/RDP attack detected against pos-terminal-02 from external IP 192.168.1.14.
+ALT-0079,2024-03-16 15:05:36,Suricata,Data Exfiltration Attempt,Critical,workstation-acct-01,admin,77.88.55.66,Large outbound transfer (>500 MB) detected from workstation-acct-01 by user admin to 77.88.55.66.
+ALT-0080,2024-01-02 03:28:39,Wazuh-FIM,Policy Violation,Low,laptop-remote-01,SYSTEM,192.168.1.40,USB mass-storage device inserted by SYSTEM on laptop-remote-01 outside approved hours.
+ALT-0081,2024-06-04 07:39:21,Suricata,Suspicious Process Execution,High,laptop-remote-01,sales_exec1,192.168.1.44,Suspicious process spawned by sales_exec1 on laptop-remote-01: cmd.exe -> powershell -enc ...
+ALT-0082,2024-03-16 12:12:21,Wazuh-FIM,Brute Force Attack,High,web-server-01,accountant2,192.168.1.11,Brute-force SSH/RDP attack detected against web-server-01 from external IP 192.168.1.11.
+ALT-0083,2024-04-30 19:55:39,Suricata,Ransomware Indicator,Critical,pos-terminal-02,fin_manager,192.168.1.18,Mass file-rename with extension .enc detected on pos-terminal-02. Possible ransomware.
+ALT-0084,2024-05-04 19:25:49,Wazuh-SCA,Authentication Failure,Medium,workstation-mgmt-01,ceo,192.168.1.15,Multiple failed login attempts detected for user ceo on workstation-mgmt-01 from 192.168.1.15.
+ALT-0085,2024-02-11 02:24:30,Wazuh-SCA,Malware Detected,Critical,dc-server-01,admin,91.108.4.0,Wazuh detected malware signature on dc-server-01. File flagged by ClamAV/YARA rule.
+ALT-0086,2024-02-18 23:40:13,Wazuh-HIDS,Data Exfiltration Attempt,Critical,laptop-sales-01,sales_exec1,77.88.55.66,Large outbound transfer (>500 MB) detected from laptop-sales-01 by user sales_exec1 to 77.88.55.66.
+ALT-0087,2024-02-13 12:57:03,Sysmon,Unauthorised File Access,Medium,pos-terminal-02,it_support,91.108.4.0,User it_support accessed restricted directory /finance/payroll on pos-terminal-02.
+ALT-0088,2024-06-11 23:05:23,Wazuh-HIDS,Privilege Escalation,High,laptop-sales-01,admin,192.168.1.22,User admin attempted to escalate privileges on laptop-sales-01 using sudo/runas.
+ALT-0089,2024-04-19 12:17:19,Wazuh-NIDS,Reconnaissance / Port Scan,Low,web-server-01,fin_manager,192.168.1.17,Port scan from 192.168.1.17 targeting internal subnet; web-server-01 probed on 1024+ ports.
+ALT-0090,2024-05-25 05:35:10,Sysmon,Unauthorised File Access,High,laptop-sales-01,hr_officer,172.67.0.0,User hr_officer accessed restricted directory /finance/payroll on laptop-sales-01.
+ALT-0091,2024-04-21 19:24:26,Sysmon,Privilege Escalation,High,db-server-01,sysadmin,192.168.1.29,User sysadmin attempted to escalate privileges on db-server-01 using sudo/runas.
+ALT-0092,2024-01-20 18:53:40,Sysmon,Firewall Rule Violation,Medium,pos-terminal-02,accountant1,198.51.100.23,Traffic from 198.51.100.23 to pos-terminal-02 violated firewall policy on port 3389/22.
+ALT-0093,2024-04-13 10:46:22,Wazuh-SCA,Suspicious Process Execution,Medium,laptop-sales-01,ceo,192.168.1.32,Suspicious process spawned by ceo on laptop-sales-01: cmd.exe -> powershell -enc ...
+ALT-0094,2024-06-13 23:18:33,Wazuh-SCA,Ransomware Indicator,Critical,erp-server-01,it_support,192.168.1.10,Mass file-rename with extension .enc detected on erp-server-01. Possible ransomware.
+ALT-0095,2024-05-17 08:17:49,Wazuh-NIDS,Unauthorised File Access,Medium,workstation-acct-01,hr_officer,192.168.1.39,User hr_officer accessed restricted directory /finance/payroll on workstation-acct-01.
+ALT-0096,2024-04-29 14:21:34,Suricata,Firewall Rule Violation,Low,pos-terminal-02,it_support,192.168.1.27,Traffic from 192.168.1.27 to pos-terminal-02 violated firewall policy on port 3389/22.
+ALT-0097,2024-06-14 09:16:15,Wazuh-NIDS,Unauthorised File Access,High,workstation-acct-01,service_account,192.168.1.30,User service_account accessed restricted directory /finance/payroll on workstation-acct-01.
+ALT-0098,2024-04-20 15:41:30,Suricata,Privilege Escalation,Critical,printer-office-01,sales_exec2,162.158.0.1,User sales_exec2 attempted to escalate privileges on printer-office-01 using sudo/runas.
+ALT-0099,2024-02-05 07:26:06,Wazuh-SCA,Ransomware Indicator,Critical,backup-server-01,admin,192.168.1.30,Mass file-rename with extension .enc detected on backup-server-01. Possible ransomware.
+ALT-0100,2024-05-16 03:45:11,Wazuh-FIM,Brute Force Attack,High,laptop-sales-01,accountant2,172.67.0.0,Brute-force SSH/RDP attack detected against laptop-sales-01 from external IP 172.67.0.0.
+ALT-0101,2024-04-04 20:56:16,Suricata,Lateral Movement,High,workstation-hr-01,accountant1,77.88.55.66,SMB lateral movement detected: accountant1 connecting from 77.88.55.66 to internal hosts.
+ALT-0102,2024-01-19 01:39:36,Wazuh-FIM,Brute Force Attack,High,pos-terminal-01,service_account,192.168.1.11,Brute-force SSH/RDP attack detected against pos-terminal-01 from external IP 192.168.1.11.
+ALT-0103,2024-03-12 15:45:35,Wazuh-SCA,Brute Force Attack,High,pos-terminal-02,accountant1,172.67.0.0,Brute-force SSH/RDP attack detected against pos-terminal-02 from external IP 172.67.0.0.
+ALT-0104,2024-05-16 11:32:29,Wazuh-SCA,Lateral Movement,Critical,workstation-acct-01,service_account,192.168.1.32,SMB lateral movement detected: service_account connecting from 192.168.1.32 to internal hosts.
+ALT-0105,2024-03-02 06:33:36,Wazuh-HIDS,Suspicious Process Execution,High,db-server-01,accountant1,198.51.100.23,Suspicious process spawned by accountant1 on db-server-01: cmd.exe -> powershell -enc ...
+ALT-0106,2024-05-20 16:48:39,Suricata,Policy Violation,Low,web-server-01,accountant1,192.168.1.27,USB mass-storage device inserted by accountant1 on web-server-01 outside approved hours.
+ALT-0107,2024-02-04 20:15:29,Wazuh-FIM,Lateral Movement,Critical,erp-server-01,accountant1,91.108.4.0,SMB lateral movement detected: accountant1 connecting from 91.108.4.0 to internal hosts.
+ALT-0108,2024-02-26 17:27:19,Sysmon,Authentication Failure,Low,db-server-01,admin,192.168.1.45,Multiple failed login attempts detected for user admin on db-server-01 from 192.168.1.45.
+ALT-0109,2024-04-02 22:58:11,Wazuh-SCA,Malware Detected,Critical,erp-server-01,admin,192.168.1.40,Wazuh detected malware signature on erp-server-01. File flagged by ClamAV/YARA rule.
+ALT-0110,2024-01-23 03:41:04,Wazuh-HIDS,Data Exfiltration Attempt,High,fin-server-01,accountant2,192.168.1.40,Large outbound transfer (>500 MB) detected from fin-server-01 by user accountant2 to 192.168.1.40.
+ALT-0111,2024-01-30 11:05:56,Wazuh-NIDS,Firewall Rule Violation,Medium,erp-server-01,ceo,192.168.1.13,Traffic from 192.168.1.13 to erp-server-01 violated firewall policy on port 3389/22.
+ALT-0112,2024-04-27 17:38:42,Suricata,Reconnaissance / Port Scan,Medium,erp-server-01,accountant1,77.88.55.66,Port scan from 77.88.55.66 targeting internal subnet; erp-server-01 probed on 1024+ ports.
+ALT-0113,2024-02-27 17:45:57,Suricata,Reconnaissance / Port Scan,Low,laptop-sales-01,it_support,162.158.0.1,Port scan from 162.158.0.1 targeting internal subnet; laptop-sales-01 probed on 1024+ ports.
+ALT-0114,2024-05-28 02:36:45,Wazuh-NIDS,Firewall Rule Violation,Medium,workstation-mgmt-01,ceo,185.220.101.45,Traffic from 185.220.101.45 to workstation-mgmt-01 violated firewall policy on port 3389/22.
+ALT-0115,2024-02-03 18:01:47,Suricata,Ransomware Indicator,Critical,db-server-01,guest_user,198.51.100.23,Mass file-rename with extension .enc detected on db-server-01. Possible ransomware.
+ALT-0116,2024-04-01 05:57:03,Wazuh-FIM,Privilege Escalation,High,fin-server-01,sales_exec1,192.168.1.48,User sales_exec1 attempted to escalate privileges on fin-server-01 using sudo/runas.
+ALT-0117,2024-01-14 19:43:18,Sysmon,Authentication Failure,Low,db-server-01,service_account,162.158.0.1,Multiple failed login attempts detected for user service_account on db-server-01 from 162.158.0.1.
+ALT-0118,2024-03-23 13:17:28,Wazuh-HIDS,Brute Force Attack,High,laptop-sales-01,SYSTEM,192.168.1.22,Brute-force SSH/RDP attack detected against laptop-sales-01 from external IP 192.168.1.22.
+ALT-0119,2024-01-14 20:47:38,Wazuh-HIDS,Lateral Movement,High,pos-terminal-01,fin_manager,192.168.1.19,SMB lateral movement detected: fin_manager connecting from 192.168.1.19 to internal hosts.
+ALT-0120,2024-03-26 06:36:12,Wazuh-HIDS,Malware Detected,Critical,workstation-mgmt-01,service_account,192.168.1.28,Wazuh detected malware signature on workstation-mgmt-01. File flagged by ClamAV/YARA rule.
+ALT-0121,2024-04-14 20:29:47,Wazuh-SCA,Unauthorised File Access,High,pos-terminal-02,sales_exec1,192.168.1.42,User sales_exec1 accessed restricted directory /finance/payroll on pos-terminal-02.
+ALT-0122,2024-04-27 05:30:34,Wazuh-FIM,Unauthorised File Access,Medium,workstation-mgmt-01,admin,192.168.1.30,User admin accessed restricted directory /finance/payroll on workstation-mgmt-01.
+ALT-0123,2024-04-24 00:11:28,Wazuh-HIDS,Authentication Failure,Low,web-server-01,guest_user,192.168.1.46,Multiple failed login attempts detected for user guest_user on web-server-01 from 192.168.1.46.
+ALT-0124,2024-04-01 08:41:33,Suricata,Ransomware Indicator,Critical,workstation-mgmt-01,admin,192.168.1.21,Mass file-rename with extension .enc detected on workstation-mgmt-01. Possible ransomware.
+ALT-0125,2024-03-25 15:22:16,Sysmon,Ransomware Indicator,Critical,printer-office-01,accountant2,172.67.0.0,Mass file-rename with extension .enc detected on printer-office-01. Possible ransomware.
+ALT-0126,2024-05-10 03:02:54,Wazuh-HIDS,Unauthorised File Access,Medium,workstation-acct-02,hr_officer,192.168.1.30,User hr_officer accessed restricted directory /finance/payroll on workstation-acct-02.
+ALT-0127,2024-06-06 23:29:33,Suricata,Malware Detected,Critical,workstation-acct-01,service_account,192.168.1.35,Wazuh detected malware signature on workstation-acct-01. File flagged by ClamAV/YARA rule.
+ALT-0128,2024-05-30 00:20:03,Wazuh-SCA,Authentication Failure,Medium,erp-server-01,hr_officer,185.220.101.45,Multiple failed login attempts detected for user hr_officer on erp-server-01 from 185.220.101.45.
+ALT-0129,2024-02-06 10:11:52,Suricata,Lateral Movement,High,pos-terminal-01,it_support,192.168.1.13,SMB lateral movement detected: it_support connecting from 192.168.1.13 to internal hosts.
+ALT-0130,2024-02-21 20:34:20,Suricata,Data Exfiltration Attempt,Critical,pos-terminal-01,sales_exec2,192.168.1.23,Large outbound transfer (>500 MB) detected from pos-terminal-01 by user sales_exec2 to 192.168.1.23.
+ALT-0131,2024-05-02 08:06:59,Suricata,Malware Detected,Critical,workstation-acct-02,service_account,192.168.1.11,Wazuh detected malware signature on workstation-acct-02. File flagged by ClamAV/YARA rule.
+ALT-0132,2024-01-19 02:23:10,Wazuh-NIDS,Brute Force Attack,Medium,db-server-01,it_support,77.88.55.66,Brute-force SSH/RDP attack detected against db-server-01 from external IP 77.88.55.66.
+ALT-0133,2024-06-30 02:28:41,Sysmon,Privilege Escalation,Critical,erp-server-01,guest_user,192.168.1.41,User guest_user attempted to escalate privileges on erp-server-01 using sudo/runas.
+ALT-0134,2024-03-29 16:46:45,Suricata,Suspicious Process Execution,High,workstation-acct-01,sales_exec2,192.168.1.25,Suspicious process spawned by sales_exec2 on workstation-acct-01: cmd.exe -> powershell -enc ...
+ALT-0135,2024-06-16 18:39:26,Wazuh-HIDS,Malware Detected,Critical,web-server-01,ceo,192.168.1.18,Wazuh detected malware signature on web-server-01. File flagged by ClamAV/YARA rule.
+ALT-0136,2024-02-24 22:07:30,Sysmon,Suspicious Process Execution,High,backup-server-01,SYSTEM,192.168.1.10,Suspicious process spawned by SYSTEM on backup-server-01: cmd.exe -> powershell -enc ...
+ALT-0137,2024-03-08 00:23:38,Wazuh-FIM,Suspicious Process Execution,High,laptop-remote-01,fin_manager,192.168.1.40,Suspicious process spawned by fin_manager on laptop-remote-01: cmd.exe -> powershell -enc ...
+ALT-0138,2024-04-21 00:46:12,Wazuh-SCA,Lateral Movement,Critical,workstation-acct-02,hr_officer,192.168.1.25,SMB lateral movement detected: hr_officer connecting from 192.168.1.25 to internal hosts.
+ALT-0139,2024-03-15 23:15:26,Sysmon,Brute Force Attack,High,fin-server-01,hr_officer,192.168.1.34,Brute-force SSH/RDP attack detected against fin-server-01 from external IP 192.168.1.34.
+ALT-0140,2024-03-05 11:12:26,Wazuh-HIDS,Ransomware Indicator,Critical,workstation-acct-02,admin,172.67.0.0,Mass file-rename with extension .enc detected on workstation-acct-02. Possible ransomware.
+ALT-0141,2024-03-20 14:38:19,Sysmon,Unauthorised File Access,Medium,workstation-hr-01,sales_exec2,45.33.32.156,User sales_exec2 accessed restricted directory /finance/payroll on workstation-hr-01.
+ALT-0142,2024-05-01 00:35:57,Sysmon,Malware Detected,High,workstation-acct-02,SYSTEM,192.168.1.31,Wazuh detected malware signature on workstation-acct-02. File flagged by ClamAV/YARA rule.
+ALT-0143,2024-03-14 18:58:19,Wazuh-FIM,Firewall Rule Violation,Low,laptop-remote-01,hr_officer,192.168.1.44,Traffic from 192.168.1.44 to laptop-remote-01 violated firewall policy on port 3389/22.
+ALT-0144,2024-02-15 14:06:31,Sysmon,Ransomware Indicator,Critical,laptop-remote-01,it_support,185.220.101.45,Mass file-rename with extension .enc detected on laptop-remote-01. Possible ransomware.
+ALT-0145,2024-05-27 15:34:46,Sysmon,Ransomware Indicator,Critical,web-server-01,service_account,185.220.101.45,Mass file-rename with extension .enc detected on web-server-01. Possible ransomware.
+ALT-0146,2024-01-09 22:20:00,Wazuh-FIM,Policy Violation,Low,workstation-acct-02,fin_manager,192.168.1.11,USB mass-storage device inserted by fin_manager on workstation-acct-02 outside approved hours.
+ALT-0147,2024-04-13 03:24:52,Wazuh-SCA,Authentication Failure,Medium,backup-server-01,hr_officer,192.168.1.25,Multiple failed login attempts detected for user hr_officer on backup-server-01 from 192.168.1.25.
+ALT-0148,2024-04-30 08:03:34,Sysmon,Reconnaissance / Port Scan,Low,dc-server-01,fin_manager,77.88.55.66,Port scan from 77.88.55.66 targeting internal subnet; dc-server-01 probed on 1024+ ports.
+ALT-0149,2024-05-03 20:51:03,Wazuh-FIM,Brute Force Attack,High,printer-office-01,ceo,162.158.0.1,Brute-force SSH/RDP attack detected against printer-office-01 from external IP 162.158.0.1.
+ALT-0150,2024-06-23 23:56:25,Wazuh-FIM,Unauthorised File Access,High,pos-terminal-01,admin,192.168.1.39,User admin accessed restricted directory /finance/payroll on pos-terminal-01.
+ALT-0151,2024-02-28 02:09:35,Sysmon,Ransomware Indicator,Critical,erp-server-01,sales_exec2,192.168.1.47,Mass file-rename with extension .enc detected on erp-server-01. Possible ransomware.
+ALT-0152,2024-06-14 16:49:53,Wazuh-SCA,Firewall Rule Violation,Medium,workstation-acct-02,accountant2,77.88.55.66,Traffic from 77.88.55.66 to workstation-acct-02 violated firewall policy on port 3389/22.
+ALT-0153,2024-05-15 18:52:36,Wazuh-FIM,Privilege Escalation,High,workstation-acct-01,ceo,203.0.113.77,User ceo attempted to escalate privileges on workstation-acct-01 using sudo/runas.
+ALT-0154,2024-06-25 19:46:57,Suricata,Authentication Failure,Medium,db-server-01,admin,192.168.1.13,Multiple failed login attempts detected for user admin on db-server-01 from 192.168.1.13.
+ALT-0155,2024-04-27 21:07:40,Wazuh-FIM,Policy Violation,Medium,laptop-remote-01,accountant2,192.168.1.24,USB mass-storage device inserted by accountant2 on laptop-remote-01 outside approved hours.
+ALT-0156,2024-05-01 23:50:54,Wazuh-HIDS,Brute Force Attack,Medium,workstation-mgmt-01,accountant2,192.168.1.18,Brute-force SSH/RDP attack detected against workstation-mgmt-01 from external IP 192.168.1.18.
+ALT-0157,2024-03-11 20:22:35,Sysmon,Ransomware Indicator,Critical,db-server-01,SYSTEM,192.168.1.47,Mass file-rename with extension .enc detected on db-server-01. Possible ransomware.
+ALT-0158,2024-02-04 02:32:31,Wazuh-NIDS,Malware Detected,High,printer-office-01,accountant2,77.88.55.66,Wazuh detected malware signature on printer-office-01. File flagged by ClamAV/YARA rule.
+ALT-0159,2024-02-19 21:34:02,Wazuh-SCA,Malware Detected,Critical,workstation-hr-01,it_support,192.168.1.20,Wazuh detected malware signature on workstation-hr-01. File flagged by ClamAV/YARA rule.
+ALT-0160,2024-01-28 07:58:30,Wazuh-NIDS,Suspicious Process Execution,High,laptop-sales-01,sysadmin,192.168.1.14,Suspicious process spawned by sysadmin on laptop-sales-01: cmd.exe -> powershell -enc ...
+ALT-0161,2024-06-02 12:50:42,Wazuh-SCA,Ransomware Indicator,Critical,laptop-remote-01,SYSTEM,192.168.1.15,Mass file-rename with extension .enc detected on laptop-remote-01. Possible ransomware.
+ALT-0162,2024-04-23 12:14:50,Wazuh-SCA,Authentication Failure,Medium,workstation-hr-01,sysadmin,192.168.1.26,Multiple failed login attempts detected for user sysadmin on workstation-hr-01 from 192.168.1.26.
+ALT-0163,2024-04-30 07:17:51,Suricata,Ransomware Indicator,Critical,erp-server-01,guest_user,103.45.67.89,Mass file-rename with extension .enc detected on erp-server-01. Possible ransomware.
+ALT-0164,2024-06-25 14:03:12,Sysmon,Data Exfiltration Attempt,High,pos-terminal-01,sysadmin,192.168.1.39,Large outbound transfer (>500 MB) detected from pos-terminal-01 by user sysadmin to 192.168.1.39.
+ALT-0165,2024-02-29 02:26:30,Wazuh-SCA,Suspicious Process Execution,High,erp-server-01,fin_manager,103.45.67.89,Suspicious process spawned by fin_manager on erp-server-01: cmd.exe -> powershell -enc ...
+ALT-0166,2024-03-13 01:02:20,Sysmon,Privilege Escalation,High,web-server-01,it_support,162.158.0.1,User it_support attempted to escalate privileges on web-server-01 using sudo/runas.
+ALT-0167,2024-05-07 04:09:26,Wazuh-HIDS,Policy Violation,Medium,workstation-mgmt-01,service_account,192.168.1.36,USB mass-storage device inserted by service_account on workstation-mgmt-01 outside approved hours.
+ALT-0168,2024-03-27 02:18:53,Wazuh-SCA,Unauthorised File Access,High,db-server-01,admin,192.168.1.23,User admin accessed restricted directory /finance/payroll on db-server-01.
+ALT-0169,2024-01-12 18:11:01,Wazuh-SCA,Brute Force Attack,High,erp-server-01,guest_user,91.108.4.0,Brute-force SSH/RDP attack detected against erp-server-01 from external IP 91.108.4.0.
+ALT-0170,2024-05-04 14:33:34,Sysmon,Suspicious Process Execution,Medium,erp-server-01,sales_exec2,198.51.100.23,Suspicious process spawned by sales_exec2 on erp-server-01: cmd.exe -> powershell -enc ...
+ALT-0171,2024-06-01 19:35:01,Suricata,Reconnaissance / Port Scan,Low,fin-server-01,SYSTEM,45.33.32.156,Port scan from 45.33.32.156 targeting internal subnet; fin-server-01 probed on 1024+ ports.
+ALT-0172,2024-02-11 22:24:22,Wazuh-NIDS,Brute Force Attack,Medium,laptop-remote-01,SYSTEM,192.168.1.47,Brute-force SSH/RDP attack detected against laptop-remote-01 from external IP 192.168.1.47.
+ALT-0173,2024-01-26 05:48:26,Suricata,Data Exfiltration Attempt,High,laptop-sales-01,ceo,45.33.32.156,Large outbound transfer (>500 MB) detected from laptop-sales-01 by user ceo to 45.33.32.156.
+ALT-0174,2024-01-03 21:15:14,Wazuh-FIM,Suspicious Process Execution,Medium,erp-server-01,guest_user,192.168.1.18,Suspicious process spawned by guest_user on erp-server-01: cmd.exe -> powershell -enc ...
+ALT-0175,2024-05-24 00:39:24,Wazuh-SCA,Brute Force Attack,High,fin-server-01,fin_manager,45.33.32.156,Brute-force SSH/RDP attack detected against fin-server-01 from external IP 45.33.32.156.
+ALT-0176,2024-04-09 15:51:44,Suricata,Lateral Movement,High,pos-terminal-02,sysadmin,192.168.1.33,SMB lateral movement detected: sysadmin connecting from 192.168.1.33 to internal hosts.
+ALT-0177,2024-05-21 05:11:52,Sysmon,Privilege Escalation,Critical,workstation-hr-01,accountant1,192.168.1.12,User accountant1 attempted to escalate privileges on workstation-hr-01 using sudo/runas.
+ALT-0178,2024-04-03 00:13:02,Wazuh-SCA,Lateral Movement,Critical,workstation-acct-02,guest_user,192.168.1.13,SMB lateral movement detected: guest_user connecting from 192.168.1.13 to internal hosts.
+ALT-0179,2024-06-23 14:53:12,Wazuh-HIDS,Firewall Rule Violation,Low,workstation-acct-02,service_account,192.168.1.14,Traffic from 192.168.1.14 to workstation-acct-02 violated firewall policy on port 3389/22.
+ALT-0180,2024-04-16 11:31:34,Sysmon,Data Exfiltration Attempt,High,erp-server-01,fin_manager,172.67.0.0,Large outbound transfer (>500 MB) detected from erp-server-01 by user fin_manager to 172.67.0.0.
+ALT-0181,2024-04-27 13:29:36,Wazuh-SCA,Data Exfiltration Attempt,Critical,workstation-mgmt-01,it_support,104.21.0.0,Large outbound transfer (>500 MB) detected from workstation-mgmt-01 by user it_support to 104.21.0.0.
+ALT-0182,2024-05-19 23:21:26,Wazuh-NIDS,Privilege Escalation,High,laptop-remote-01,guest_user,192.168.1.45,User guest_user attempted to escalate privileges on laptop-remote-01 using sudo/runas.
+ALT-0183,2024-03-18 10:13:02,Wazuh-SCA,Firewall Rule Violation,Medium,printer-office-01,accountant1,192.168.1.39,Traffic from 192.168.1.39 to printer-office-01 violated firewall policy on port 3389/22.
+ALT-0184,2024-03-13 16:22:09,Wazuh-NIDS,Policy Violation,Low,backup-server-01,sales_exec1,203.0.113.77,USB mass-storage device inserted by sales_exec1 on backup-server-01 outside approved hours.
+ALT-0185,2024-03-24 20:41:25,Wazuh-HIDS,Ransomware Indicator,Critical,erp-server-01,sysadmin,192.168.1.15,Mass file-rename with extension .enc detected on erp-server-01. Possible ransomware.
+ALT-0186,2024-04-19 01:10:56,Suricata,Policy Violation,Medium,laptop-sales-01,fin_manager,192.168.1.47,USB mass-storage device inserted by fin_manager on laptop-sales-01 outside approved hours.
+ALT-0187,2024-06-17 13:36:09,Sysmon,Data Exfiltration Attempt,High,workstation-acct-01,hr_officer,192.168.1.37,Large outbound transfer (>500 MB) detected from workstation-acct-01 by user hr_officer to 192.168.1.37.
+ALT-0188,2024-04-08 12:42:49,Wazuh-NIDS,Authentication Failure,Medium,workstation-mgmt-01,accountant2,172.67.0.0,Multiple failed login attempts detected for user accountant2 on workstation-mgmt-01 from 172.67.0.0.
+ALT-0189,2024-03-12 08:57:31,Wazuh-HIDS,Malware Detected,Critical,web-server-01,sysadmin,104.21.0.0,Wazuh detected malware signature on web-server-01. File flagged by ClamAV/YARA rule.
+ALT-0190,2024-04-29 03:27:31,Sysmon,Suspicious Process Execution,Medium,laptop-sales-01,sales_exec1,192.168.1.49,Suspicious process spawned by sales_exec1 on laptop-sales-01: cmd.exe -> powershell -enc ...
+ALT-0191,2024-01-06 14:55:53,Wazuh-NIDS,Ransomware Indicator,Critical,workstation-mgmt-01,guest_user,192.168.1.27,Mass file-rename with extension .enc detected on workstation-mgmt-01. Possible ransomware.
+ALT-0192,2024-06-17 21:51:14,Wazuh-NIDS,Suspicious Process Execution,High,printer-office-01,hr_officer,45.33.32.156,Suspicious process spawned by hr_officer on printer-office-01: cmd.exe -> powershell -enc ...
+ALT-0193,2024-01-18 19:37:18,Sysmon,Reconnaissance / Port Scan,Medium,erp-server-01,fin_manager,192.168.1.11,Port scan from 192.168.1.11 targeting internal subnet; erp-server-01 probed on 1024+ ports.
+ALT-0194,2024-03-12 20:34:20,Wazuh-FIM,Lateral Movement,High,workstation-acct-01,sales_exec1,192.168.1.20,SMB lateral movement detected: sales_exec1 connecting from 192.168.1.20 to internal hosts.
+ALT-0195,2024-01-31 05:03:17,Wazuh-NIDS,Policy Violation,Medium,laptop-sales-01,ceo,192.168.1.13,USB mass-storage device inserted by ceo on laptop-sales-01 outside approved hours.
+ALT-0196,2024-04-04 07:20:51,Suricata,Reconnaissance / Port Scan,Low,pos-terminal-01,sysadmin,77.88.55.66,Port scan from 77.88.55.66 targeting internal subnet; pos-terminal-01 probed on 1024+ ports.
+ALT-0197,2024-03-08 00:37:19,Wazuh-SCA,Unauthorised File Access,High,db-server-01,accountant1,192.168.1.17,User accountant1 accessed restricted directory /finance/payroll on db-server-01.
+ALT-0198,2024-05-09 13:03:47,Wazuh-FIM,Privilege Escalation,Critical,pos-terminal-01,guest_user,192.168.1.43,User guest_user attempted to escalate privileges on pos-terminal-01 using sudo/runas.
+ALT-0199,2024-02-28 12:42:57,Wazuh-NIDS,Authentication Failure,Low,workstation-acct-01,ceo,198.51.100.23,Multiple failed login attempts detected for user ceo on workstation-acct-01 from 198.51.100.23.
+ALT-0200,2024-05-25 01:20:17,Wazuh-SCA,Malware Detected,Critical,db-server-01,hr_officer,162.158.0.1,Wazuh detected malware signature on db-server-01. File flagged by ClamAV/YARA rule.

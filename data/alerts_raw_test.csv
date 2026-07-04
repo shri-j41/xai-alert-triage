@@ -1,0 +1,11 @@
+alert_id,timestamp,source_tool,alert_category,severity,affected_asset,user,source_ip,alert_description
+ALT-0001,2024-01-28 02:17:37,Sysmon,Ransomware Indicator,Critical,fin-server-01,service_account,198.51.100.23,Mass file-rename with extension .enc detected on fin-server-01. Possible ransomware.
+ALT-0002,2024-02-12 10:55:36,Wazuh-NIDS,Privilege Escalation,High,workstation-mgmt-01,sales_exec1,185.220.101.45,User sales_exec1 attempted to escalate privileges on workstation-mgmt-01 using sudo/runas.
+ALT-0003,2024-03-22 11:06:14,Wazuh-NIDS,Lateral Movement,High,workstation-hr-01,accountant1,192.168.1.44,SMB lateral movement detected: accountant1 connecting from 192.168.1.44 to internal hosts.
+ALT-0004,2024-05-15 13:33:55,Wazuh-SCA,Unauthorised File Access,High,laptop-sales-01,admin,192.168.1.20,User admin accessed restricted directory /finance/payroll on laptop-sales-01.
+ALT-0005,2024-01-20 20:20:03,Wazuh-HIDS,Data Exfiltration Attempt,Critical,dc-server-01,accountant1,192.168.1.31,Large outbound transfer (>500 MB) detected from dc-server-01 by user accountant1 to 192.168.1.31.
+ALT-0006,2024-05-21 16:47:47,Wazuh-SCA,Firewall Rule Violation,Low,backup-server-01,hr_officer,192.168.1.12,Traffic from 192.168.1.12 to backup-server-01 violated firewall policy on port 3389/22.
+ALT-0007,2024-06-10 01:18:21,Sysmon,Lateral Movement,High,printer-office-01,sales_exec1,203.0.113.77,SMB lateral movement detected: sales_exec1 connecting from 203.0.113.77 to internal hosts.
+ALT-0008,2024-05-08 09:42:37,Wazuh-NIDS,Reconnaissance / Port Scan,Medium,workstation-mgmt-01,accountant1,192.168.1.12,Port scan from 192.168.1.12 targeting internal subnet; workstation-mgmt-01 probed on 1024+ ports.
+ALT-0009,2024-02-23 23:27:03,Wazuh-SCA,Suspicious Process Execution,Medium,laptop-remote-01,accountant1,192.168.1.34,Suspicious process spawned by accountant1 on laptop-remote-01: cmd.exe -> powershell -enc ...
+ALT-0010,2024-05-16 06:43:10,Sysmon,Ransomware Indicator,Critical,dc-server-01,hr_officer,203.0.113.77,Mass file-rename with extension .enc detected on dc-server-01. Possible ransomware.
